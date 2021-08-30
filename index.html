@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div id="preload">
+      <i class="fal fa-spinner-third fa-spin"></i>
+    </div>
+    <nav class="inverted">
+      <div>
+        <h1>Vino<span>Pravin.</span></h1>
+      </div>
+      <div class="list-div">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+        <i onclick="darkMode()" class="fas fa-moon dark"></i>
+      </div>
+      <div class="icon">
+        <i onclick="darkMode()" class="fas fa-moon dark"></i>
+        <span onclick="menu()"><i class="fal fa-bars"></i>MENU</span>
+      </div>
+    </nav>
+
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="banner inverted" id="home">
+      <div class="text-div">
+        <div class="text">
+          <p><span class="inverted">WELCOME</span> TO VINOPRAVIN.</p>
+        </div>
+      </div>
+      <div class="img-div">
+        <img src="images/banner3.jpg" alt="" />
+        <img src="images/chilli.jpg" alt="" />
+        <div class="img-content">
+          <h1>BUSSINESS</h1>
+          <h1><span>CONFERENCE</span>2019</h1>
+          <h3>November 26-30, 2019 - 08:00am-12:00pm</h3>
+          <div>
+            <button>Get Ticket</button>
+            <button>Watch Video</button>
+          </div>
+        </div>
+
+        <div class="img-content">
+          <h1>ACCOUNT</h1>
+          <h1><span>CONFERENCE</span>2019</h1>
+          <h3>November 26-30, 2019 - 08:00am-12:00pm</h3>
+          <div>
+            <button>Get Ticket</button>
+            <button>Watch Video</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <div class="img inverted">
+        <div>
+          <img src="images/prod/chillipowder.jpg" alt="" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="aboutme">
+          <span class="inverted">WELCOME</span>
+          <h2>About Me</h2>
+          <p>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia. It is a paradisematic country, in which
+            roasted parts of sentences fly into your mouth.
+          </p>
+          <p>
+            The copy warned the Little Blind Text, that where it came from it
+            would have been rewritten a thousand times and everything that was
+            left from its origin would be the word "and" and the Little Blind
+            Text should turn around and return to its own, safe country. But
+            nothing the copy said could convince her and so it didn’t take long
+            until a few insidious Copy Writers ambushed her, made her drunk with
+            Longe and Parole and dragged her into their agency, where they
+            abused her for their.
+          </p>
+        </div>
+        <div class="exp inverted">
+          <span>5 Years Experienced</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="schedule" id="schedule">
+      <div class="heading flex">
+        <span class="inverted">Schedule</span>
+        <h2>Program Schedule</h2>
+        <p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia
+        </p>
+      </div>
+      <div class="content" id="content">
+        <div class="daycard" id="daycard">
+          <div class="card" onclick="showInfo(0)">
+            <div class="after"></div>
+            <h3>Day 01</h3>
+            <span>21 November 2019</span>
+          </div>
+          <div class="card" onclick="showInfo(1)">
+            <div class="after"></div>
+            <h3>Day 02</h3>
+            <span>21 November 2019</span>
+          </div>
+          <div class="card" onclick="showInfo(2)">
+            <div class="after"></div>
+            <h3>Day 03</h3>
+            <span>21 November 2019</span>
+          </div>
+          <div class="card" onclick="showInfo(3)">
+            <div class="after"></div>
+            <h3>Day 04</h3>
+            <span>21 November 2019</span>
+          </div>
+        </div>
+
+        <div class="infocard">
+          <div class="card">
+            <div class="img inverted">
+              <img src="images/chilli.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>08:00AM - 10:00AM</span>
+              <h3>Introduction to Wordpress 5.0</h3>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <a href="">— Brett Morgan<span>Founder of Wordpress</span></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img inverted">
+              <img src="images/chilli.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>08:00AM - 10:00AM</span>
+              <h3>Introduction to Wordpress 5.0</h3>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <a href="">- Brett Morgan<span>Founder of Wordpress</span></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img inverted">
+              <img src="images/chilli.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>08:00AM - 10:00AM</span>
+              <h3>Introduction to Wordpress 5.0</h3>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <a href="">— Brett Morgan<span>Founder of Wordpress</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="infocard">
+          <div class="card">
+            <div class="img inverted">
+              <img src="images/prod/Cherry.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>08:00AM - 10:00AM</span>
+              <h3>Introduction to Wordpress 5.0</h3>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <a href="">— Brett Morgan<span>Founder of Wordpress</span></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img inverted">
+              <img src="images/prod/Cherry.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>08:00AM - 10:00AM</span>
+              <h3>Introduction to Wordpress 5.0</h3>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <a href="">- Brett Morgan<span>Founder of Wordpress</span></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img inverted">
+              <img src="images/prod/Cherry.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>08:00AM - 10:00AM</span>
+              <h3>Introduction to Wordpress 5.0</h3>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <a href="">— Brett Morgan<span>Founder of Wordpress</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="infocard">
+          <div class="card">
+            <div class="img inverted">
+              <img src="images/prod/Cardamom.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>08:00AM - 10:00AM</span>
+              <h3>Introduction to Wordpress 5.0</h3>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <a href="">— Brett Morgan<span>Founder of Wordpress</span></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img inverted">
+              <img src="images/prod/Cardamom.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>08:00AM - 10:00AM</span>
+              <h3>Introduction to Wordpress 5.0</h3>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <a href="">- Brett Morgan<span>Founder of Wordpress</span></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img inverted">
+              <img src="images/prod/Cardamom.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>08:00AM - 10:00AM</span>
+              <h3>Introduction to Wordpress 5.0</h3>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <a href="">— Brett Morgan<span>Founder of Wordpress</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="infocard">
+          <div class="card">
+            <div class="img inverted">
+              <img src="images/prod/avocado.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>08:00AM - 10:00AM</span>
+              <h3>Introduction to deva 5.0</h3>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <a href="">— Brett Morgan<span>Founder of Wordpress</span></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img inverted">
+              <img src="images/prod/avocado.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>08:00AM - 10:00AM</span>
+              <h3>Introduction to Wordpress 5.0</h3>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <a href="">- Brett Morgan<span>Founder of Wordpress</span></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img inverted">
+              <img src="images/prod/avocado.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>08:00AM - 10:00AM</span>
+              <h3>Introduction to Wordpress 5.0</h3>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <a href="">— Brett Morgan<span>Founder of Wordpress</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="schedule blog" id="blog">
+      <div class="heading flex">
+        <span class="inverted">BLOG</span>
+        <h2>Our Blog</h2>
+        <p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia
+        </p>
+      </div>
+      <div class="blog-card">
+        <div class="card inverted">
+          <img src="images/ginger.jpg" alt="" />
+          <p>MARCH 23, 2019 ADMIN<i class="fad fa-comment-alt-lines"></i> 3</p>
+          <a href="#" class="inverted"
+            >Why Lead Generation is Key for Business Growth</a
+          >
+          <p>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
+        </div>
+        <div class="card inverted">
+          <img src="images/ginger.jpg" alt="" />
+          <p>MARCH 23, 2019 ADMIN<i class="fad fa-comment-alt-lines"></i> 3</p>
+          <a href="#" class="inverted"
+            >Why Lead Generation is Key for Business Growth</a
+          >
+          <p>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
+        </div>
+        <div class="card inverted">
+          <img src="images/ginger.jpg" alt="" />
+          <p>MARCH 23, 2019 ADMIN<i class="fad fa-comment-alt-lines"></i> 3</p>
+          <a href="#" class="inverted"
+            >Why Lead Generation is Key for Business Growth</a
+          >
+          <p>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="inverted">
+      <div>
+        <h4>About VinoPravin.</h4>
+        <p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts.
+        </p>
+        <div>
+          <i
+            class="fab fa-facebook-f"
+            data-aos="fade-up"
+            data-aos-once="true"
+          ></i>
+          <i
+            class="fab fa-instagram"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-once="true"
+          ></i>
+          <i
+            class="fab fa-twitter"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-once="true"
+          ></i>
+        </div>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Schedule</li>
+          <li>Speakers</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Privacy</h4>
+        <ul>
+          <li>Career</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Buy Ticket</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Have a Questions?</h4>
+        <p>
+          <i class="fas fa-map-marker-alt"></i>203 Fake St. Mountain View, San
+          Francisco, California, USA
+        </p>
+        <p><i class="fas fa-phone-alt"></i>+2 392 3929 210</p>
+        <p><i class="fad fa-envelope"></i>[email protected]</p>
+      </div>
+      <div class="copy">
+        <p>
+          Copyright © 2021 All rights reserved | This template is made with
+          <i class="fas fa-heart"></i> by VinoPravin
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    window.onload = function () {
+      setTimeout(() => {
+        document.getElementById("preload").style.display = "none";
+      }, 1000);
+    };
+    var dark = document.getElementsByClassName("dark");
+    var webdark = dark[0];
+    var mobiledark = dark[1];
+    var content = document.getElementById("content");
+    var card = content.getElementsByClassName("infocard");
+    var daycardDiv = document.getElementById("daycard");
+    var daycard = daycardDiv.getElementsByClassName("card");
+    var after = document.getElementsByClassName("after");
+    var listDiv = document.getElementsByClassName("list-div");
+    var list = listDiv[0].getElementsByTagName("li");
+    var menuList = document.getElementById("menu");
+
+    for (let index = 0; index < card.length; index++) {
+      card[index].style.display = "none";
+      after[index].style.opacity = "0";
+      daycard[index].style.background = "#ffffff";
+      card[0].style.display = "flex";
+      after[0].style.opacity = "1";
+      daycard[0].style.background = "#033fff";
+      daycard[0].style.color = "#ffffff";
+    }
+    var indexValue = 1;
+    function banners() {
+      var imgDiv = document.getElementsByClassName("img-div");
+      var img = imgDiv[0].getElementsByTagName("img");
+      var content = imgDiv[0].getElementsByClassName("img-content");
+      setTimeout(banners, 3000);
+      for (let index = 0; index < img.length; index++) {
+        img[index].style.display = "none";
+        content[index].style.display = "none";
+      }
+      if (indexValue > img.length) {
+        indexValue = 1;
+      }
+      img[indexValue - 1].style.display = "block";
+      content[indexValue - 1].style.display = "flex";
+      indexValue++;
+    }
+    banners();
+
+    function menu() {
+      if (menuList.classList.contains("menu")) {
+        menuList.classList.replace("menu", "menuopen");
+      } else {
+        menuList.classList.replace("menuopen", "menu");
+      }
+
+      // if (menuList.style.display == "none" || menuList.style.display == "") {
+      //   menuList.style.display = "flex";
+      //   menuList.style.animation = "menu 0.5s linear";
+      // } else {
+      //   menuList.style.animation = "menurev 0.5s linear";
+      //   setTimeout(() => {
+      //     menuList.style.display = "none";
+      //   }, 485);
+      // }
+    }
+    function showInfo(i) {
+      for (let index = 0; index < card.length; index++) {
+        card[index].style.display = "none";
+        after[index].style.opacity = "0";
+        daycard[index].style.background = "#ffffff";
+        daycard[index].style.color = "#000000";
+        card[i].style.display = "flex";
+        after[i].style.opacity = "1";
+        daycard[i].style.background = "#033fff";
+        daycard[i].style.color = "#ffffff";
+      }
+    }
+    window.addEventListener("scroll", function () {
+      var nav = document.querySelector("nav");
+      var about = document.getElementById("about");
+      var about = document.getElementById("schedule");
+      var about = document.getElementById("blog");
+      // if (pageYOffset > 545) {
+      //   nav.classList.add("fixed");
+      //   menuList.classList.add("fixedMenu");
+      // } else {
+      //   nav.classList.remove("fixed");
+      //   menuList.classList.remove("fixedMenu");
+      // }
+      // if (nav.classList.contains("fixed")) {
+      //   alert("works");
+      // }
+      nav.classList.toggle("fixed", pageYOffset > 545);
+      menuList.classList.toggle("fixedMenu", pageYOffset > 545);
+      for (let index = 0; index < list.length; index++) {
+        list[index].classList.toggle("active");
+      }
+      list[0].classList.toggle("active", pageYOffset < 694);
+      list[1].classList.toggle(
+        "active",
+        pageYOffset > 694 && pageYOffset < 1359
+      );
+      list[2].classList.toggle(
+        "active",
+        pageYOffset > 1359 && pageYOffset < 2779
+      );
+      list[3].classList.toggle("active", pageYOffset > 2779);
+    });
+    var about = document.getElementById("about");
+    about.addEventListener("scroll", function () {
+      console.log(pageYOffset);
+    });
+
+    function darkMode() {
+      document.documentElement.classList.toggle("dark");
+      document.querySelectorAll(".inverted").forEach((result) => {
+        result.classList.toggle("invert");
+      });
+      if (document.documentElement.classList.contains("dark")) {
+        webdark.classList.remove("fas", "fa-moon");
+        webdark.classList.add("fad", "fa-sun");
+        mobiledark.classList.remove("fas", "fa-moon");
+        mobiledark.classList.add("fad", "fa-sun");
+      } else {
+        webdark.classList.add("fas", "fa-moon");
+        webdark.classList.remove("fad", "fa-sun");
+        mobiledark.classList.add("fas", "fa-moon");
+        mobiledark.classList.remove("fad", "fa-sun");
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
